@@ -1,0 +1,481 @@
+{
+  "search_parameters": {
+    "engine": "google_hotels",
+    "q": "Bali Resorts",
+    "gl": "us",
+    "hl": "en",
+    "currency": "USD",
+    "check_in_date": "2026-04-08",
+    "check_out_date": "2026-04-09",
+    "adults": 2,
+    "children": 0
+  },
+  "properties": [
+    {
+      "type": "vacation rental",
+      "name": "Le Sabot Ubud",
+      "property_token": "ChoQ5YiTp-rKmO60ARoNL2cvMTFzc2djMTNqcRAC",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-04-08&check_out_date=2026-04-09&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoQ5YiTp-rKmO60ARoNL2cvMTFzc2djMTNqcRAC&q=Bali+Resorts",
+      "gps_coordinates": {
+        "latitude": -8.509249687194824,
+        "longitude": 115.25045776367188
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "$114",
+        "extracted_lowest": 114
+      },
+      "total_rate": {
+        "lowest": "$114",
+        "extracted_lowest": 114
+      },
+      "prices": [
+        {
+          "source": "Vio.com",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/7287187d-2586-494f-92ff-726979e94c2a.png",
+          "num_guests": 2,
+          "rate_per_night": {
+            "lowest": "$275",
+            "extracted_lowest": 275
+          }
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "I Gusti Ngurah Rai International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "1 hr 15 min"
+            },
+            {
+              "type": "Public transport",
+              "duration": "2 hr 35 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/dMgscVE-u9-2DwgMdjw3-VCr-Hp4YumakK2lvUYZ3atOhibvqgiOp16hVmqHMwgVENtbR5FQAB8aUeuuZ9g0za0AvuBzR0b9mySgDkyrN0iEe019NbZ15GOQzrw8qyBsoKY2V5-XEGnjM4PLA5IliyBkr_aY3A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.travelapi.com/lodging/37000000/36160000/36156700/36156677/5f39a075_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/TPUBNIykpiG--loLYs1PBP22PLVtE82Ss2B5Ad76AK04gieA3yiqI-UuQxIfROcT6zzx14a-CwKlTUrF1iOvAFONBTqGukizCznRSiIqg8qMTGCU0I3cg8pdvvUcjrr22ugDzDC_ulOzPWYFKyYBokPgr5eMuCY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://p.fih.io/v2/nSr0o-3gbZN8o1xMecXCcG-BkDeQVo3k-wOeVogkTe7ajuFOX7O-WA8aRWhXz1jsToZif_TsA_xCWfhWRa0ZvYGAuXxwyU8DG1Khb7tXwRrkjHmOR4O-mQjvLqehoa22SzRX1rv_Jm-zITF4en3ketkYyx1j1dLbUfhlOgkNcIcn9PwNtk_AU2csbUk6dd9sGqAEVmr2qjQMPI095Pdv3pEtFPIxOxxOPC-YWoFEg4yXvyZQ3nG9m-EOZqnW2VoZLvhO30Ezy-jlq6VDaEuB2cO59smfYmZms_xpqqibRgZgF0t_WTSmaPY-DpE9Rgh64AZ_KQd1YCLQ6KTARXyTJbjVJju6qRET"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/BPC6bC8HAE7QfoWgpTNrDk6ZqNKfaEVcoCeita1w6oe9gDRubYcVIWL-bDSme2HAM9AxUXLfiKzaG6qh7774DpkMQSIRYCiINQbVAokncI-3Ak-fjmUh3OJNeNyu3NTEFCt904fvEaycrJepe1beD9iXGS9jUg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://p.fih.io/v2/nSr0o-3gbZN8o1xMecXCcG-BkDeQVo3k-wOeVogkTe7ajuFOX7O-WA8aRWhXz1jsToZif_TsA_xCWfhWRa0ZhJvslhwYynMfFjGqe7Ro-hn6-HjUPa_zhxDnE6ugtp2yPVNu8-75J13OfjF4en3ketkYyx1j1dLbUfhlOgkNcIcn9PwNtk_AU2csbUk6dd9sGqAEVmr2qjQMPI095Pdv3pEtFPIxOxxOPC-YWoFEg4yXvyZQ3nG9m-EOZqnW2VoZLvhO30Ezy-jlq6VDaEuB2cO59smfYmZms_xpqqibRgdxAxN7HDTQcL49eZE9Rgh64AZ_KQd1YCLYZCOSBLYx3EvpGYIVVoEv"
+        }
+      ],
+      "overall_rating": 4.4355693,
+      "reviews": 123,
+      "location_rating": 4,
+      "amenities": [
+        "Air conditioning",
+        "Kid-friendly",
+        "Crib"
+      ],
+      "excluded_amenities": [
+        "No airport shuttle",
+        "No beach access",
+        "No elevator"
+      ],
+      "health_and_safety": {
+        "groups": [
+          {
+            "title": "Enhanced cleaning",
+            "list": [
+              {
+                "title": "Disinfectant used to clean the property",
+                "available": true
+              }
+            ]
+          },
+          {
+            "title": "Minimized contact",
+            "list": [
+              {
+                "title": "No-contact check-in and check-out",
+                "available": true
+              }
+            ]
+          }
+        ]
+      },
+      "essential_info": [
+        "Entire villa",
+        "Sleeps 10",
+        "9 bedrooms"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoQ5YiTp-rKmO60ARoNL2cvMTFzc2djMTNqcRAC",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoQ5YiTp-rKmO60ARoNL2cvMTFzc2djMTNqcRAC"
+    },
+    {
+      "type": "vacation rental",
+      "name": "The Pandawa Hills Ceningan",
+      "property_token": "ChoQxJaakviXiNqEARoNL2cvMTFrajVwaGRrdxAC",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-04-08&check_out_date=2026-04-09&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoQxJaakviXiNqEARoNL2cvMTFrajVwaGRrdxAC&q=Bali+Resorts",
+      "gps_coordinates": {
+        "latitude": -8.701930046081543,
+        "longitude": 115.44574737548828
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "$18",
+        "extracted_lowest": 18
+      },
+      "total_rate": {
+        "lowest": "$18",
+        "extracted_lowest": 18
+      },
+      "prices": [
+        {
+          "source": "Vio.com",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/7287187d-2586-494f-92ff-726979e94c2a.png",
+          "num_guests": 2,
+          "rate_per_night": {
+            "lowest": "$18",
+            "extracted_lowest": 18
+          }
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "I Gusti Ngurah Rai International Airport"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/DdU2gz0Pfg8jBJftOo6xInAVTOWW69s7dqzYgL4k-tZ-Q48e24Ezlb6f9cyj-9fdXKBhw3j1IAZVRHGNG0I3-o_0HkgnE-tG78nZcRhKfPnMEksYGGKI3rVT2g82zkpmh3oaRxvV2kAoVLy9ecUDUrWBpVvd53E=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://p.fih.io/v2/nSr0o-3gbZN8o1xMecXCcG-BkDeQVo3k-wOeVogkTe7ajuFOX7O-WA8aRWhXz1jsToZif_TsA_xCWfhWRa0Zop-RmSwN9W4YBgahY6BExh7Fp3PvDbqErxv8MNP2qIziFlRX1aj5E1H1ejF4en3ketkYyx1j1dLbUfhlOgkNcIcn9PwNtk_AU2csbUk6dd9sGqAEVmr2qjQMPI095Pdv3pEtFPIxOBxOZy_9To5SgPnevBhQ3nG9m-EPX9ye2HQRa_hO30Ey8p2tqotPakuR-8O4z7zXY0hqsfxpuuKZDWo4FxRrWDW1YLgoDMd7awtI-XJidwhiOPMvrvrE6X8D5g3UhaP8kg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/X5LrM4C7t7cPdIqxjTUkVs8dFkC43FE5noVEF7hrzK1XpYYbqsgRGuoMil7wgmF4gKp22BcCRu0W6c5NcKp35WjcxMZUKmWyn_-N_6XtJg67UVrkVTHbjrU9x3ya67h60eulx-B7jCpqQvyJV4BX3Z4H2wvOi_c=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x683/196145875.jpg?k=626bf5456faa26b53a8254326af3cab919f7752b855ad32918a92dcfe397288d&o="
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/uJ3OFaDJZAwdd2HZXKh0nt5iOm5CeubnGdrl6JffEo6A-l2GTqE_KHcgB6_JdYgrWVwjxanZNB6CGxuMwAafiZBGZKJOwRXAmzC0Nllv3Q4L_BjiyAhml8d15VSLU1myojm0ktiRZkHkMOlMtj4NogI7T-2chQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://p.fih.io/v2/nSr0o-3gbZN8o1xMecXCcG-BkDeQVo3k-wOeVogkTe7ajuFOX7O-WA8aRWhXz1jsToZif_TsA_xCWfhWRa0Z2N-SogoY7G8GGU_TZaAbsi_nl172DpX8oDXEMN_6p6q6EjFnzbHFJVv0OTF4en3ketkYyx1j1dLbUfhlOgkNcIcn9PwNtk_AU2csbUk6dd9sGqAEVmr2qjQMPI095Pdv3pEtFPIxOBxOZy_9To5SgPnevBhQ3nG9m-EPX9ye2HQRa_hO30Ey8p2tqotPakuR-8O4z7zXY0hqsfxpuuKZRVthFBN8ADfQYLgoDMd7awtI-XJidwhi37zli1szZFRm08vkbMKtBw"
+        }
+      ],
+      "overall_rating": 4.7218966,
+      "reviews": 29,
+      "location_rating": 3.1,
+      "amenities": [
+        "Air conditioning",
+        "Crib",
+        "Indoor pool"
+      ],
+      "excluded_amenities": [
+        "No airport shuttle",
+        "No beach access",
+        "No elevator"
+      ],
+      "health_and_safety": {
+        "groups": [
+          {
+            "title": "Enhanced cleaning",
+            "list": [
+              {
+                "title": "Disinfectant used to clean the property",
+                "available": true
+              }
+            ]
+          },
+          {
+            "title": "Minimized contact",
+            "list": [
+              {
+                "title": "No-contact check-in and check-out",
+                "available": true
+              }
+            ]
+          }
+        ]
+      },
+      "essential_info": [
+        "Entire house",
+        "Sleeps 4",
+        "2 bedrooms"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoQxJaakviXiNqEARoNL2cvMTFrajVwaGRrdxAC",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoQxJaakviXiNqEARoNL2cvMTFrajVwaGRrdxAC"
+    },
+    {
+      "type": "hotel",
+      "name": "The Ritz-Carlton, Bali",
+      "description": "Zen-like quarters, some with butler service, in an upscale property offering refined dining & a spa.",
+      "link": "https://www.ritzcarlton.com/en/hotels/dpssw-the-ritz-carlton-bali/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+      "property_token": "ChkIv_HyiNKHpf6yARoML2cvMXozdGJnZ3BzEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-04-08&check_out_date=2026-04-09&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChkIv_HyiNKHpf6yARoML2cvMXozdGJnZ3BzEAE&q=Bali+Resorts",
+      "gps_coordinates": {
+        "latitude": -8.8306709,
+        "longitude": 115.2153312
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "$332",
+        "extracted_lowest": 332
+      },
+      "total_rate": {
+        "lowest": "$332",
+        "extracted_lowest": 332
+      },
+      "nearby_places": [
+        {
+          "name": "I Gusti Ngurah Rai International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "29 min"
+            }
+          ]
+        },
+        {
+          "name": "Nusa By/Suka - Nusa Dua"
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipO1Dou9_1-Tkxap4AVBEokY8YVdkADT9C3-SSJ5=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipO1Dou9_1-Tkxap4AVBEokY8YVdkADT9C3-SSJ5=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSybno53ZJvInSd8X9in9yb0W6i5RpI-7Ms4ZmkrkPWXBww71hbKZn0sfahHHxOA1Ovo5PryeWUYe7EZIHbVzC24Jgs-gCjCx__IJMFCX4Oq6gfpYAKMGoZOGyUF2DBLFfasCfZB=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIC-oIPzUg=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy1i8J_v2eV36V6bpiqaeRXTB9t7FhfF30H-nSypPGJ7ikqdExv1jICihvZFnAQiYKUjcXH-JphQ6cbB16r9Rx0VbiFu_yLupk0MLY3tIU7LoXQvsnuW6Bcb_F6MujTc7LWctpuqA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/CIHM0ogKEICAgIDMmqfUzAE=s10000"
+        }
+      ],
+      "overall_rating": 4.6,
+      "reviews": 4272,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 3422
+        },
+        {
+          "stars": 4,
+          "count": 467
+        },
+        {
+          "stars": 3,
+          "count": 141
+        }
+      ],
+      "location_rating": 3,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 784,
+          "positive": 669,
+          "negative": 88,
+          "neutral": 27,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChkIv_HyiNKHpf6yARoML2cvMXozdGJnZ3BzEAE"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 724,
+          "positive": 641,
+          "negative": 53,
+          "neutral": 30,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChkIv_HyiNKHpf6yARoML2cvMXozdGJnZ3BzEAE"
+        },
+        {
+          "name": "Nature",
+          "description": "Nature and outdoor activities",
+          "total_mentioned": 326,
+          "positive": 272,
+          "negative": 30,
+          "neutral": 24,
+          "category_token": "2kxK7Hica1yRnFiSmp5fVDl5r19iSWlRqkJiXopCfmlJSn5-kUJicklmWWZJZmox4zKINAAIZRQx",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=2kxK7Hica1yRnFiSmp5fVDl5r19iSWlRqkJiXopCfmlJSn5-kUJicklmWWZJZmox4zKINAAIZRQx&engine=google_hotels_reviews&hl=en&property_token=ChkIv_HyiNKHpf6yARoML2cvMXozdGJnZ3BzEAE"
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Free parking"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChkIv_HyiNKHpf6yARoML2cvMXozdGJnZ3BzEAE"
+    },
+    {
+      "type": "hotel",
+      "name": "Mulia Resort - Nusa Dua, Bali",
+      "description": "Upmarket rooms & suites in a premium beachfront getaway with 6 restaurants & 4 pools.",
+      "logo": "https://www.gstatic.com/travel-hotels/branding/icon_220.png",
+      "sponsored": true,
+      "gps_coordinates": {
+        "latitude": -8.81621,
+        "longitude": 115.22117399999999
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "$484",
+        "extracted_lowest": 484,
+        "before_taxes_fees": "$388",
+        "extracted_before_taxes_fees": 388
+      },
+      "prices": [
+        {
+          "source": "Priceline",
+          "logo": "https://www.gstatic.com/travel-hotels/branding/icon_220.png",
+          "rate_per_night": {
+            "lowest": "$484",
+            "extracted_lowest": 484,
+            "before_taxes_fees": "$388",
+            "extracted_before_taxes_fees": 388
+          }
+        }
+      ],
+      "nearby_places": [
+        {
+          "name": "I Gusti Ngurah Rai International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "21 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNP9sahhj7GhCqvn_UuJ6E_k6YLxdVXKgj_L1Pe=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipNP9sahhj7GhCqvn_UuJ6E_k6YLxdVXKgj_L1Pe=s10000"
+        }
+      ],
+      "overall_rating": 4.7,
+      "reviews": 7567,
+      "location_rating": 3.5,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 1088,
+          "positive": 971,
+          "negative": 58,
+          "neutral": 59,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&gl=us&hl=en&property_token=ChcIyoSjddjs2uZ8xGgsvZy8xdGYyMTV2aBAB"
+        }
+      ],
+      "amenities": [
+        "Free breakfast",
+        "Free Wi-Fi",
+        "Parking ($)"
+      ],
+      "property_token": "ChcIyoSjddjs2uZ8xGgsvZy8xdGYyMTV2aBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-05-30&check_out_date=2025-05-31&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChcIyoSjddjs2uZ8xGgsvZy8xdGYyMTV2aBAB&q=Bali+Resorts",
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&gl=us&hl=en&property_token=ChcIyoSjddjs2uZ8xGgsvZy8xdGYyMTV2aBAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChcIyoSjddjs2uZ8xGgsvZy8xdGYyMTV2aBAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Anantara Uluwatu Bali Resort",
+      "description": "Chic suites with in-room bars & high-end sound systems, plus restaurants, a spa & an infinity pool.",
+      "link": "https://www.anantara.com/uluwatu-bali?utm_source=GoogleMyBusiness&utm_medium=GMB&utm_term=Uluwatu&utm_content=Home&utm_campaign=Google_GMB",
+      "gps_coordinates": {
+        "latitude": -8.8085355,
+        "longitude": 115.107911
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "$247",
+        "extracted_lowest": 247,
+        "before_taxes_fees": "$199",
+        "extracted_before_taxes_fees": 199
+      },
+      "total_rate": {
+        "lowest": "$1,233",
+        "extracted_lowest": 1233,
+        "before_taxes_fees": "$994",
+        "extracted_before_taxes_fees": 994
+      },
+      "deal": "27% less than usual",
+      "deal_description": "Great Deal",
+      "nearby_places": [
+        {
+          "name": "Padang Padang Beach",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "10 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOWiZ-Gb1n4TFh_g0UJSqViox2Gt5X30ESdFIg9=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh5.googleusercontent.com/p/AF1QipOWiZ-Gb1n4TFh_g0UJSqViox2Gt5X30ESdFIg9=s10000"
+        }
+      ],
+      "overall_rating": 4.5,
+      "reviews": 2210,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 1613
+        },
+        {
+          "stars": 4,
+          "count": 350
+        },
+        {
+          "stars": 3,
+          "count": 118
+        },
+        {
+          "stars": 2,
+          "count": 38
+        },
+        {
+          "stars": 1,
+          "count": 91
+        }
+      ],
+      "location_rating": 3.6,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 397,
+          "positive": 324,
+          "negative": 53,
+          "neutral": 20,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&gl=us&hl=en&property_token=F3cIyo2Fjdjs2uZ8xGgsvZy8xdGYyMTV2aBAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Free parking"
+      ],
+      "property_token": "F3cIyo2Fjdjs2uZ8xGgsvZy8xdGYyMTV2aBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2025-05-30&check_out_date=2025-05-31&children=0&currency=USD&engine=google_hotels&gl=us&hl=en&property_token=ChoI3LHO6tXtkviSARoNL2cvMTFieGY2ZmRiahAB&q=Bali+Resorts",
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&gl=us&hl=en&property_token=F3cIyo2Fjdjs2uZ8xGgsvZy8xdGYyMTV2aBAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=F3cIyo2Fjdjs2uZ8xGgsvZy8xdGYyMTV2aBAB"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Runtime
+serpapi==1.1.2
+pydantic==2.14.1
+pydantic-ai-slim[anthropic,google,openai]==2.55.0
+streamlit==1.65.0
+pandas==3.0.6
+httpx==0.28.1
+beautifulsoup4==4.15.0
+icalendar==7.3.0
+python-dotenv==1.2.4
+
+# Tests
+pytest==9.1.1

@@ -1,0 +1,58 @@
+{
+  "suggestions": [
+    {
+      "position": 1,
+      "name": "Seoul, South Korea",
+      "type": "city",
+      "description": "Capital of South Korea",
+      "id": "/m/0hsqf",
+      "airports": [
+        {
+          "name": "Gimpo International Airport",
+          "id": "GMP",
+          "city": "Seoul",
+          "city_id": "/m/0hsqf",
+          "distance": "11 mi"
+        },
+        {
+          "name": "Incheon International Airport",
+          "id": "ICN",
+          "city": "Seoul",
+          "city_id": "/m/0hsqf",
+          "distance": "31 mi"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Busan, South Korea",
+      "type": "city",
+      "description": "City in South Korea",
+      "id": "/m/0hv7l",
+      "airports": [
+        {
+          "name": "Gimhae International Airport",
+          "id": "PUS",
+          "city": "Busan",
+          "city_id": "/m/0hv7l",
+          "distance": "7 mi"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Jeju Island, South Korea",
+      "type": "city",
+      "description": "Island in South Korea",
+      "id": "/g/121z6l6y",
+      "airports": [
+        {
+          "name": "Jeju International Airport",
+          "id": "CJU",
+          "city": "Jeju-si",
+          "city_id": "/m/03m9sv"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[project]
+name = "cfp-compass"
+version = "1.0.0"
+description = "AI agent that ranks open conference CFPs by topic fit, deadline and the real trip cost, using SerpApi."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

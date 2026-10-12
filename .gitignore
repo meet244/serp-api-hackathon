@@ -1,0 +1,39 @@
+# Secrets: never commit real keys
+.env
+.env.*
+!.env.example
+
+# SerpApi / LLM response cache (may contain search data; rebuilt on demand)
+.cache/
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Outputs
+*.ics
+!tests/fixtures/*.ics
+out/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+.streamlit/secrets.toml
