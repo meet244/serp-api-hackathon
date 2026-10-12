@@ -19,11 +19,12 @@ from bs4 import BeautifulSoup
 from .cache import make_key
 from .context import RunContext, log
 from .llm import UNTRUSTED_NOTE, make_agent, run_structured, untrusted
-from pydantic import Field
+from pydantic import BaseModel, Field
 
 from .models import CFP, Candidate
 
-EXTRACT_VERSION = "extract-v2"
+EXTRACT_VERSION = "extract-v3"
+MAX_CFPS_PER_PAGE = 8
 EXTRACT_TTL = 72 * 60 * 60
 PAGE_TIMEOUT = 8.0
 PAGE_MAX_BYTES = 2_000_000
@@ -42,8 +43,15 @@ _DATE_MENTION = re.compile(
     re.IGNORECASE,
 )
 
-INSTRUCTIONS = f"""You extract facts about ONE conference's call for proposals (CFP, also called call for papers,
-call for speakers or CfS) from a single web search result.
+INSTRUCTIONS = f"""You extract conference calls for proposals (CFP, also called call for papers, call for speakers
+or CfS) from a single web search result.
+
+Return one item in cfps for each conference whose CFP the source describes:
+- A single conference's page (its CFP page, website or Sessionize/Pretalx page): exactly one item.
+- A directory or list of several conferences' CFPs: one item per listed conference whose CFP deadline is on or
+  after today's date, at most {MAX_CFPS_PER_PAGE}, each with that conference's own facts and an evidence excerpt
+  from its own entry.
+- A page that is not about any conference's CFP (a blog post, a speaker profile, a job ad): an empty list.
 
 Rules:
 - Never invent a date. If the source does not state a date, return null for it.
@@ -71,7 +79,16 @@ class ExtractedCFP(CFP):
     )
 
 
-_agent = make_agent(ExtractedCFP, INSTRUCTIONS)
+class PageExtraction(BaseModel):
+    """Conference calls for proposals found in one search result."""
+
+    cfps: list[ExtractedCFP] = Field(
+        description="One item for a single conference's page; one per listed conference for a CFP directory "
+        f"(at most {MAX_CFPS_PER_PAGE}); empty if the page is not about a conference CFP."
+    )
+
+
+_agent = make_agent(PageExtraction, INSTRUCTIONS)
 
 
 def count_date_mentions(text: str) -> int:
@@ -184,8 +201,8 @@ def postprocess(cfp: CFP, candidate: Candidate) -> CFP:
     return cfp.model_copy(update=update)
 
 
-def extract_one(candidate: Candidate, ctx: RunContext) -> CFP | None:
-    """Extract one candidate. Returns None (and counts an error) if the model fails."""
+def extract_one(candidate: Candidate, ctx: RunContext) -> list[CFP] | None:
+    """Extract the CFPs in one candidate. Returns None (and counts an error) if the model fails."""
     page_text = None
     cache_params = {"url": candidate.url, "v": EXTRACT_VERSION}
     # Snippets rarely carry deadline, dates and city together: fetch the page unless the snippet
@@ -196,14 +213,14 @@ def extract_one(candidate: Candidate, ctx: RunContext) -> CFP | None:
         if cached is None and needs_page:
             page_text = fetch_page_text(candidate.url)
         prompt = build_prompt(candidate, ctx.today.isoformat(), page_text)
-        extracted = run_structured(
-            _agent, prompt, ExtractedCFP, ctx, cache_kind="extract", cache_params=cache_params, ttl_seconds=EXTRACT_TTL
+        page = run_structured(
+            _agent, prompt, PageExtraction, ctx, cache_kind="extract", cache_params=cache_params, ttl_seconds=EXTRACT_TTL
         )
-        cfp = CFP.model_validate(extracted.model_dump())
+        cfps = [CFP.model_validate(item.model_dump()) for item in page.cfps[:MAX_CFPS_PER_PAGE]]
     except Exception as exc:
         ctx.add_error(f"Extraction failed for {candidate.url}: {type(exc).__name__}: {str(exc)[:160]}")
         return None
-    return postprocess(cfp, candidate)
+    return [postprocess(cfp, candidate) for cfp in cfps]
 
 
 def extract_all(
@@ -216,7 +233,7 @@ def extract_all(
     Results keep the candidates' order (not completion order), so de-duplication and every
     downstream cache key are identical on a re-run.
     """
-    results: list[CFP | None] = [None] * len(candidates)
+    results: list[list[CFP] | None] = [None] * len(candidates)
     total = len(candidates)
     with ThreadPoolExecutor(max_workers=ctx.max_workers) as pool:
         futures = {pool.submit(extract_one, candidate, ctx): i for i, candidate in enumerate(candidates)}
@@ -224,4 +241,4 @@ def extract_all(
             results[futures[future]] = future.result()
             if on_progress:
                 on_progress(done, total)
-    return [cfp for cfp in results if cfp is not None]
+    return [cfp for page in results if page for cfp in page]

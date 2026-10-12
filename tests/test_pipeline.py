@@ -223,10 +223,10 @@ class FakeLLM:
         tool = info.output_tools[0]
         properties = tool.parameters_json_schema.get("properties", {})
         prompt = last_user_prompt(messages)
-        if "conference_name" in properties:
+        if "cfps" in properties:
             kind = "extract"
             url = re.search(r"^URL: (\S+)$", prompt, re.MULTILINE).group(1)
-            args = self.pages[url]["record"]
+            args = {"cfps": [self.pages[url]["record"]]}
         elif "scores" in properties:
             kind = "fit"
             items = re.findall(r"^(\d+)\. (.+?) \| topics:", prompt, re.MULTILINE)

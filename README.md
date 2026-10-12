@@ -4,7 +4,6 @@ CFP Compass finds open conference calls for proposals (CFPs) that match your tal
 
 Built for the SerpApi India Hackathon 2026, AI Agents track.
 
-<!-- TODO: add a screenshot of the ranked table before submitting -->
 <img src="docs/screenshot.png" alt="CFP Compass: open CFPs ranked by topic fit, deadline and net trip cost in INR" width="900">
 
 ## The problem and the insight

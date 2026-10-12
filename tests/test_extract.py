@@ -48,7 +48,11 @@ def structured_model(args_for, prompts: list[str] | None = None) -> FunctionMode
         prompt = prompt_text(messages)
         if prompts is not None:
             prompts.append(prompt)
-        return ModelResponse(parts=[ToolCallPart(info.output_tools[0].name, json.dumps(args_for(prompt)))])
+        args = args_for(prompt)
+        properties = info.output_tools[0].parameters_json_schema.get("properties", {})
+        if "cfps" in properties and "cfps" not in args:
+            args = {"cfps": [args]}  # the extraction agent returns a list of CFPs per page
+        return ModelResponse(parts=[ToolCallPart(info.output_tools[0].name, json.dumps(args))])
 
     return FunctionModel(fn)
 
@@ -297,7 +301,9 @@ def test_extract_one_returns_postprocessed_cfp(ctx, page_fetches):
     ctx.llm_model = structured_model(lambda p: GOOD_ARGS, prompts)
     hit = candidate()
 
-    cfp = extract_one(hit, ctx)
+    cfps = extract_one(hit, ctx)
+    assert cfps is not None and len(cfps) == 1
+    cfp = cfps[0]
 
     assert cfp is not None
     assert cfp.conference_name == "PyCon Test 2027"
@@ -387,3 +393,25 @@ def test_extract_all_empty(ctx):
     calls: list[tuple[int, int]] = []
     assert extract_all([], ctx, on_progress=lambda d, t: calls.append((d, t))) == []
     assert calls == []
+
+
+def test_directory_page_yields_several_cfps(ctx, page_fetches):
+    """A CFP directory page returns one record per listed conference, each post-processed."""
+    listing = {"cfps": [
+        {**GOOD_ARGS, "conference_name": "Conf A 2027", "confidence": 0.8},
+        {**GOOD_ARGS, "conference_name": "Conf B 2027", "confidence": 0.7},
+    ]}
+    ctx.llm_model = structured_model(lambda p: listing)
+    hit = candidate(url="https://confs.example.org/cfp/python")
+
+    cfps = extract_one(hit, ctx)
+
+    assert [c.conference_name for c in cfps] == ["Conf A 2027", "Conf B 2027"]
+    assert all(c.source_url == hit.url for c in cfps)
+    assert extract_all([hit], ctx) == cfps  # flattened, served from the cache
+
+
+def test_page_without_cfp_yields_nothing(ctx, page_fetches):
+    ctx.llm_model = structured_model(lambda p: {"cfps": []})
+    assert extract_one(candidate(), ctx) == []
+    assert ctx.errors == []
