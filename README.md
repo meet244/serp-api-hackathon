@@ -242,7 +242,7 @@ It counts the requests that SerpApi actually answered during this run: cache mis
 | Event more than 330 days away | "Fares not yet published". No flight or hotel search is made. |
 | Event dates not published | Trip "unavailable: Event dates not published". |
 | The LLM returns invalid output | Pydantic AI asks it to fix the output twice; then that candidate is skipped and counted as an error. |
-| The LLM provider returns 429 or 5xx | A lighter sibling model is tried first (for Gemini: `gemini-flash-lite-latest`, then `gemini-2.5-flash`). Then it waits, using the provider's own retry hint when given (up to 60 s), up to 4 times. If the quota is gone, the rest of the run stops calling the LLM and a banner says so; cached LLM answers are still used. |
+| The LLM provider returns 429 or 5xx | A lighter sibling model is tried first (for Gemini: `gemini-flash-lite-latest`, then `gemini-3.5-flash`). Then it waits, using the provider's own retry hint when given (up to 60 s), up to 4 times. If the quota is gone, the rest of the run stops calling the LLM and a banner says so; cached LLM answers are still used. |
 | Topic-fit LLM call fails | Falls back to keyword overlap. |
 | A page fetch times out or is blocked | Extraction uses the search snippet only. |
 

@@ -54,7 +54,7 @@ UNTRUSTED_NOTE = (
 
 # When the configured model is overloaded (HTTP 503) or rate-limited, try a sibling model first.
 FALLBACK_MODELS: dict[str, tuple[str, ...]] = {
-    "google": ("google:gemini-flash-lite-latest", "google:gemini-2.5-flash"),
+    "google": ("google:gemini-flash-lite-latest", "google:gemini-3.5-flash"),
     "anthropic": ("anthropic:claude-haiku-4-5",),
     "openai": ("openai:gpt-4.1-nano",),
 }
