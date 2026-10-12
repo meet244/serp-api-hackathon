@@ -1,5 +1,13 @@
 # CFP Compass
 
+<p align="center">
+  <a href="https://youtu.be/3JNIPseQ-hA" target="_blank" rel="noopener noreferrer" title="Watch the CFP Compass demo on YouTube">
+    <img src="docs/demo-video.png" alt="CFP Compass demo video on YouTube (2:15). Click to play." width="820">
+  </a>
+  <br>
+  <sub><b>▶ <a href="https://youtu.be/3JNIPseQ-hA" target="_blank" rel="noopener noreferrer">Watch the 2-minute demo on YouTube</a></b></sub>
+</p>
+
 CFP Compass finds open conference calls for proposals (CFPs) that match your talk topics and shows what each trip would really cost from your home city, in one ranked table.
 
 Built for the SerpApi India Hackathon 2026, AI Agents track.
@@ -12,7 +20,7 @@ CFPs are spread across Sessionize, Pretalx and hundreds of conference websites, 
 
 ## Demo video
 
-**Demo video: TODO add link**
+Watch the 2-minute demo on YouTube: <https://youtu.be/3JNIPseQ-hA>. It shows the app running locally: a real first run with live SerpApi searches, the ranked table, the evidence behind each deadline, and a re-run that uses 0 searches.
 
 ## How CFP Compass uses SerpApi
 
