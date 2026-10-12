@@ -216,7 +216,7 @@ It opens at <http://localhost:8501>.
 
 > **Credits:** a first full run uses about 56 searches; a re-run with the same inputs uses none while the cache is fresh. The free plan has 250 searches a month. Lowering "Conferences to price" to 10 brings a first run to about 48.
 
-## 🖥️ Usage
+## 💻 Usage
 
 Fill in the sidebar and click **Find CFPs**. A status panel shows each step as it runs.
 
